@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/nullButton"
+        android:layout_width="122dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="52dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/andButton" />
+
+    <Button
+        android:id="@+id/einsButton"
+        android:layout_width="129dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="35dp"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orButton" />
+
+    <Button
+        android:id="@+id/andButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:text="And"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/berechnungsFeld" />
+
+    <Button
+        android:id="@+id/orButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="30dp"
+        android:text="Or"
+        app:layout_constraintStart_toEndOf="@+id/andButton"
+        app:layout_constraintTop_toBottomOf="@+id/berechnungsFeld" />
+
+    <Button
+        android:id="@+id/xorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp"
+        android:text="Xor"
+        app:layout_constraintBottom_toTopOf="@+id/einsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orButton" />
+
+    <Button
+        android:id="@+id/ergebnisButton"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="87dp"
+        android:text="Ergebnis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loeschenButton" />
+
+    <TextView
+        android:id="@+id/berechnungsFeld"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="53dp" />
+
+    <TextView
+        android:id="@+id/ergebnisFeld"
+        android:layout_width="104dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/berechnungsFeld"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loeschenButton"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="89dp"
+        android:text="Löschen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+    <Button
+        android:id="@+id/dezimalButton"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="88dp"
+        android:text="Dezimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ergebnisButton" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="205dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="86dp"
+        android:text="Zurück"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nullButton" />
+</android.support.constraint.ConstraintLayout>
