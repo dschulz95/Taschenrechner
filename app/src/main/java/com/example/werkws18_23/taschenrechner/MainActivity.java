@@ -227,16 +227,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!ergebnisFeld.getText().toString().isEmpty()){
                     if(dez == false) {
-                        int binZahl = Integer.parseInt(ergebnisFeld.getText().toString(), 2);
-                        int restWert = 0;
-                        int dezZahl = 0;
-                        int anzahlVerschiebung = 0;
-                        while (binZahl != 0) {
-                            restWert = binZahl % 10;//Restwert nach Kommaverschiebung aus letzten Durchlauf
-                            dezZahl = dezZahl + (int) (restWert * (Math.pow(2, anzahlVerschiebung)));//Summierte Zwischenwerte
-                            binZahl = binZahl / 10;//neue Kommaverschiebung
-                            anzahlVerschiebung = anzahlVerschiebung + 1;//Anzahl der Stellen wird je Durchlauf um 1 erhöht
-                        }
+                        int dezZahl = Integer.parseInt(ergebnisFeld.getText().toString(), 2);
                         ergebnisFeld.setText(String.valueOf(dezZahl));
                         dez = true;
                     }
